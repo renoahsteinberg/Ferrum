@@ -14,7 +14,7 @@ I'm sure that i also want to implement constants
 ```Rust
 let x = 10;
 let mut y = 10;
-const z = 10;
+const z: i32 = 10;
 ```
 2. Data Types
 ```Rust
