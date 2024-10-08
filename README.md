@@ -1,3 +1,47 @@
 # Ferrum
+
 statically-typed compiled programming language written in C (project of a lecture)
 Syntax inspired by Rust, because it's goated
+
+> Mostly inspired by https://doc.rust-lang.org/book/
+
+# Syntax 
+1. Variables and Mutability
+```
+I really like the immutable and mutable design, which is why i'll stick to it.
+I'm sure that i also want to implement constants
+```
+```Rust
+let x = 10;
+let mut y = 10;
+const z = 10;
+```
+2. Data Types
+```Rust
+i{8,16,32,64,128}: {8,16,32,64,128}-bit signed integer
+u{8,16,32,64,128}: {8,16,32,64,128}-bit unsigned integer
+f{32,64}: single/double-precision float
+bool: True, False
+char: Character Type
+Tuples: (i32, f64) = (500, 6.4);
+Arrays: [i32; 5] = [1, 2, 3, 4, 5];
+```
+3. Functions
+```Rust
+fn add(a: i32, b: i32) -> i32 {
+    a + b;
+}
+
+// Anon Functions (Lambda Functions)
+let sum = |a: i32, b: i32| -> i32 {a + b};
+```
+4. Control Flow
+```Rust
+if condition{
+    // code
+} else if another_condition {
+    // code
+} else {
+    // code
+}
+```
