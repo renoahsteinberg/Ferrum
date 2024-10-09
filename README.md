@@ -1,8 +1,5 @@
 # Ferrum
 
-statically-typed compiled programming language written in C (project of a lecture)
-Syntax inspired by Rust, because it's goated
-
 > Mostly inspired by https://doc.rust-lang.org/book/
 
 # Syntax 
@@ -14,12 +11,12 @@ I'm sure that i also want to implement constants
 ```Rust
 let x = 10;
 let mut y = 10;
-const z: i32 = 10;
+const z = 10;
 ```
 2. Data Types
 ```Rust
-i{8,16,32,64,128}: {8,16,32,64,128}-bit signed integer
-u{8,16,32,64,128}: {8,16,32,64,128}-bit unsigned integer
+i{8,16,32,64,128,size}: {8,16,32,64,128,size}-bit signed integer
+u{8,16,32,64,128,size}: {8,16,32,64,128,size}-bit unsigned integer
 f{32,64}: single/double-precision float
 bool: True, False
 char: Character Type
@@ -45,3 +42,46 @@ if condition{
     // code
 }
 ```
+5. Ownership and Borrowing
+```Rust
+fn calc_len(s: &String) -> usize {
+   s.len() 
+}
+
+let s1 = String::from("hello");
+let len = calc_len(&s1); // Borrowing
+let s2 = s1; // s1 is moved to s2
+```
+6. Structs and Enums
+```Rust
+struct Point {
+    x: i32,
+    y: i32,
+}
+
+let p = Point { x: 0, y: 0 };
+
+enum Direction {
+    North,
+    South,
+    East,
+}
+
+let dir = Direction::North;
+```
+7. Pattern Matching
+```Rust
+match dir {
+    Direction::North => println!("Heading North"),
+    Direction::South => println!("Heading South"),
+    _ => println!("Going East or West"),
+}
+```
+
+
+
+
+
+
+
+
