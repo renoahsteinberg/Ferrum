@@ -1,5 +1,8 @@
 # Ferrum
 
+statically-typed compiled programming language written in C (project of a lecture)
+Syntax inspired by Rust, because it's goated
+
 > Mostly inspired by https://doc.rust-lang.org/book/
 
 # Syntax 
@@ -11,7 +14,7 @@ I'm sure that i also want to implement constants
 ```Rust
 let x = 10;
 let mut y = 10;
-const z = 10;
+const z: i32 = 10;
 ```
 2. Data Types
 ```Rust
