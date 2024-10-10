@@ -7,10 +7,6 @@ Syntax inspired by Rust, because it's goated
 
 # Syntax 
 1. Variables and Mutability
-```
-I really like the immutable and mutable design, which is why i'll stick to it.
-I'm sure that i also want to implement constants
-```
 ```Rust
 let x = 10;
 let mut y = 10;
