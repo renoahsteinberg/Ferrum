@@ -1,6 +1,6 @@
 # Ferrum
 
-statically-typed compiled programming language written in C (project of a lecture)
+statically-typed compiled programming language written in C
 Syntax inspired by Rust, because it's goated
 
 > Mostly inspired by https://doc.rust-lang.org/book/
